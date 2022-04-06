@@ -21,6 +21,34 @@ class Parents {
     set Name(value){
         this.name=value
     }
+
+    getType() {
+        return 'Parents'
+    }
+}
+
+//Define child class extend parents class
+class Child extends Parents{
+    constructor(value='anonymous',height=100){
+        super(value)
+        this.height=height
+    }
+
+    get Height(){
+        return this.height
+    }
+
+    set Height(height){
+        this.height=height
+    }
+
+    toString(){
+        return  '${this.name}'
+    }
+
+    getType(){
+        return 'Child'        
+    }
 }
 
 
@@ -29,6 +57,12 @@ const main=()=>{
     console.log(obj)
     obj.name='SEstudio'
     console.log(obj)
+    console.log(obj.getType())
+
+    let childObject=new Child()
+    console.log(childObject)
+    console.log(childObject.toString())
+    console.log(childObject.getType())
 }
 main()
 

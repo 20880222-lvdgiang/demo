@@ -36,6 +36,8 @@ console.log(a);
 a.splice(2); //Xóa tại vị trí số 2 trở đi
 console.log(a);
 
+
+
 a=[1,2,99,3,4,5]
 console.log("Sort operator");
 a.sort();
@@ -65,3 +67,9 @@ console.log("Lấy phần tử đầu mảng ra");
 b=a.shift();
 console.log("a = ",a);
 console.log("b = ",b);
+
+a.unshift(888)
+console.log('a=',a)
+
+let c=a.shift()
+console.log("c=",c)

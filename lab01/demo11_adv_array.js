@@ -97,3 +97,12 @@ sum=a.reduce((result,item)=>{
     return result+item;
 },30)
 console.log("sum = ",sum);
+
+a.map(item=>console.log(item))
+
+let e=a.filter(item=>item%2===0)
+console.log("aaa=",e)
+
+console.log("xuat a=",a)
+let tong=a.reduce((ketqua,item)=>{return ketqua+item})
+console.log("tong=",tong)
