@@ -77,7 +77,7 @@ class Child extends Parents{
     }
 
     toString(){
-        return  'Name is ${this.name} with height ${this.height}'
+        return  `Name is ${this.name} with height ${this.height}`
     }
 
     getType(){
